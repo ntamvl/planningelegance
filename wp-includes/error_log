@@ -1,0 +1,24 @@
+[01-Jun-2015 17:38:49 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/plannin5/public_html/wp-includes/rss-functions.php on line 8
+[29-Jun-2015 06:37:36 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/plannin5/public_html/wp-includes/nav-menu-template.php on line 16
+[29-Jun-2015 06:37:40 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/general-template.php on line 1760
+[29-Jun-2015 06:37:42 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/author-template.php on line 454
+[29-Jun-2015 06:37:58 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home1/plannin5/public_html/wp-includes/feed-rss.php on line 8
+[29-Jun-2015 06:38:09 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home1/plannin5/public_html/wp-includes/default-widgets.php on line 14
+[29-Jun-2015 06:38:11 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home1/plannin5/public_html/wp-includes/default-filters.php on line 17
+[29-Jun-2015 06:38:19 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/plannin5/public_html/wp-includes/rss-functions.php on line 8
+[29-Jun-2015 06:40:02 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home1/plannin5/public_html/wp-includes/feed-rss2.php on line 8
+[29-Jun-2015 06:40:10 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/plannin5/public_html/wp-includes/functions.php on line 8
+[29-Jun-2015 06:40:10 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/plannin5/public_html/wp-includes/functions.php on line 8
+[29-Jun-2015 06:40:10 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/plannin5/public_html/wp-includes/functions.php on line 8
+[29-Jun-2015 06:40:14 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home1/plannin5/public_html/wp-includes/shortcodes.php on line 403
+[29-Jun-2015 06:40:23 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/canonical.php on line 556
+[29-Jun-2015 06:40:36 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/taxonomy.php on line 130
+[29-Jun-2015 06:40:39 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home1/plannin5/public_html/wp-includes/vars.php on line 23
+[29-Jun-2015 06:40:42 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/kses.php on line 1455
+[29-Jun-2015 06:40:54 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-includes/theme.php on line 678
+[29-Jun-2015 06:41:03 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home1/plannin5/public_html/wp-includes/feed-rdf.php on line 8
+[29-Jun-2015 06:41:22 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/plannin5/public_html/wp-includes/script-loader.php on line 25
+[29-Jun-2015 06:41:22 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/plannin5/public_html/wp-includes/script-loader.php on line 25
+[29-Jun-2015 06:41:22 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/plannin5/public_html/wp-includes/script-loader.php on line 25
+[29-Jun-2015 06:41:37 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/plannin5/public_html/wp-includes/rss.php on line 19
+[29-Jun-2015 06:42:21 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home1/plannin5/public_html/wp-includes/feed-atom.php on line 8

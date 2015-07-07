@@ -1,0 +1,56 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains footer content and the closing of the #main and #page div elements.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>
+
+		<?php /*</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<?php get_sidebar( 'footer' ); ?>
+
+			<div class="site-info">
+				<?php do_action( 'twentyfourteen_credits' ); ?>
+				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), 'WordPress' ); ?></a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page --> */?>
+<footer>
+            <div class="container">
+            <div class="ftrmain">
+            	<div class="col-md-4 paddNone">
+                <p>Copyright &copy;  PlanningElegance.com 2015</p>
+                </div>
+                <div class="col-md-4">
+                <div class="social">
+                <a href="#" class="fa fa-facebook-square fa-2x"></a>
+                <a href="#" class="fa fa-twitter-square fa-2x"></a>
+                <a href="#" class="fa fa-google-plus-square fa-2x"></a>
+                <a href="#" class="fa fa-pinterest-square fa-2x"></a>
+                </div>
+                </div>
+                <div class="col-md-4 paddNone text-right">
+                <form action="" method="post">
+                    <div class="input-prepend"><span class="add-on"><i class="fa fa-envelope"></i></span>
+                        <input type="text" id="" name="" placeholder="Newsletter">
+                        <input type="submit" value="Subscribe Now!" class="btn btn-large" />
+                    </div>
+                    
+              </form>
+                </div>
+                <div class="clearfix"></div>
+                </div>
+            </div>
+        </footer>
+</div>
+
+	<?php wp_footer(); ?>
+</body>
+</html>

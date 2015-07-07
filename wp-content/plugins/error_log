@@ -1,0 +1,6 @@
+[03-May-2015 07:32:49 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
+[06-May-2015 00:46:22 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
+[20-May-2015 05:10:28 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
+[12-Jun-2015 10:49:47 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
+[22-Jun-2015 19:09:34 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
+[29-Jun-2015 01:42:29 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/plannin5/public_html/wp-content/plugins/hello.php on line 60
