@@ -71,6 +71,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
+	overflow-x: hidden;
 }
 
 article,
@@ -506,7 +507,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	
+
 	border: 0;
 	border-radius: 2px;
 	color: #000;
@@ -4329,16 +4330,16 @@ a.post-thumbnail:hover {
          width:40%;
          float:right;
  }
- 
+
  .imgbx{
         width:100%;
-        
+
  }
  .imgbx img{
         float:left;
-        
+
  }
- 
+
  .pp-pinit-link{position:absolute;}
 .entry-summary a{
        color:#000;
@@ -4350,7 +4351,7 @@ a.post-thumbnail:hover {
 a#scroll-to-top {
     background: url("./images/arrow.png") no-repeat scroll center center rgba(0, 0, 0, 0);
     bottom: 30px;
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 0;
     height: 60px;
     outline: 0 none;
@@ -4386,5 +4387,5 @@ a#scroll-to-top {
 	.srchh{position:relative !important; top:20px;}
 	.subscrbBX{position:relative !important; background:rgba(0,0,0,0.5); color:#fff; padding:20px 30px; width:91%; margin-left:65px;}
 	.yogiimg img{width:100%; height:auto;}
-} 
+}
 
