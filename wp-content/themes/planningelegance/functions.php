@@ -195,7 +195,7 @@ function twentyfourteen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => __( 'Blog Search', 'twentyfourteen' ),
 		'id'            => 'blogsearch',
@@ -205,8 +205,8 @@ function twentyfourteen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-	
-	
+
+
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'twentyfourteen' ),
 		'id'            => 'sidebar-3',
@@ -539,3 +539,6 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+update_option('siteurl', 'http://planningelegance.nhantamio.com');
+update_option('home', 'http://planningelegance.nhantamio.com');
