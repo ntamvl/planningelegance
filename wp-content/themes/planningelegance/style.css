@@ -4389,3 +4389,6 @@ a#scroll-to-top {
 	.yogiimg img{width:100%; height:auto;}
 }
 
+#wrap {
+	overflow-x: hidden;
+}
