@@ -540,5 +540,8 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 	require get_template_directory() . '/inc/featured-content.php';
 }
 
-update_option('siteurl', 'http://planningelegance.nhantamio.com');
-update_option('home', 'http://planningelegance.nhantamio.com');
+// update_option('siteurl', 'http://planningelegance.nhantamio.com');
+// update_option('home', 'http://planningelegance.nhantamio.com');
+
+update_option('siteurl', 'http://www.planningelegance.com');
+update_option('home', 'http://www.planningelegance.com');
