@@ -4392,3 +4392,7 @@ a#scroll-to-top {
 #wrap {
 	overflow-x: hidden;
 }
+
+.serv-txt p {
+	color: #000;
+}
