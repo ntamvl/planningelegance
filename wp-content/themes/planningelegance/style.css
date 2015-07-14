@@ -4405,3 +4405,7 @@ a#scroll-to-top {
 .home, .home a {
 	text-transform: capitalize;
 }
+
+.breadcrumb {
+	text-transform: capitalize;
+}

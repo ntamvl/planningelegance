@@ -132,3 +132,10 @@
 		}
 	} );
 } )( jQuery );
+
+$(function() {
+  var links = document.getElementsByClassName("home");
+	for (var i = 0; i < links.length; i++) {
+	  links[i].innerHTML = links[i].innerHTML.toLowerCase();
+	}
+});
