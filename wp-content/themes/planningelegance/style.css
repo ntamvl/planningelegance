@@ -4401,3 +4401,7 @@ a#scroll-to-top {
 .portfolio-modal, .portfolio-modal p {
 	color: #000;
 }
+
+.home, .home a {
+	text-transform: capitalize;
+}
