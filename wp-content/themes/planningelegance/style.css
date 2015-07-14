@@ -148,6 +148,7 @@ h6 {
 h1 {
 	font-size: 26px;
 	line-height: 1.3846153846;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -4394,5 +4395,9 @@ a#scroll-to-top {
 }
 
 .serv-txt p {
+	color: #000;
+}
+
+.portfolio-modal, .portfolio-modal p {
 	color: #000;
 }
