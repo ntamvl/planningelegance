@@ -4416,3 +4416,8 @@ a#scroll-to-top {
     margin-bottom: 0;
     margin-top: 0;
 }
+
+.portfolio-item p {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
