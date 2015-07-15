@@ -4409,3 +4409,10 @@ a#scroll-to-top {
 .breadcrumb {
 	text-transform: capitalize;
 }
+
+.vc_tta-title-text {
+	color: inherit;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
