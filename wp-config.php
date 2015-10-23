@@ -22,7 +22,7 @@ define('DB_NAME', 'plannin5_planning_2');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'nguyen');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
