@@ -26,7 +26,7 @@ get_header(); ?>
          <div class="row">
                 <div class="col-lg-12">
                     <h2 style="margin-left:0px;">BLOG – PICTURES FROM OUR PAST EVENTS</h2>
-			
+
                     <hr class="star-primary">
                 </div>
             </div>
@@ -43,7 +43,7 @@ $my_query = new WP_Query($args);
 if( $my_query->have_posts() ) {
   while ($my_query->have_posts()) : $my_query->the_post(); ?>
     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-    
+
     <h2><?php the_title(); ?></h2>
     </a>
     <?php the_content(); ?>

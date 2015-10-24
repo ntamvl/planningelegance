@@ -35,15 +35,16 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php echo get_template_directory_uri(); ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/custom.css" rel="stylesheet" type="text/css">
 
+    <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 <!-- jQuery -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
 
@@ -60,7 +61,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/menu.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/menu_script.js"></script>
     <!--Menu Section Close***************************************************-->
-    
+
     <!--Image Slider Section Start***************************************************-->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slider.css" />
 <!--Image Slider Section Close ***************************************************-->
@@ -102,7 +103,7 @@
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">*/?>
-<?php if(is_front_page()){?>
+<?php if(is_front_page() || is_home() || $post->post_name == "home"){?>
 <div id="wrap">
 	<?php }else{?>
 <div id="wrapInnr">
@@ -111,16 +112,16 @@
     <!-- Navigation -->
     	<div id='cssmenu'>
 		<?php
-						
+
 					wp_nav_menu(
-						array( 
+						array(
 							'menu' => 'header menu',
 							'container' => '',
-							'menu_class' => ''					
-							
+							'menu_class' => ''
+
 						)
 					);
-				?>	
+				?>
              <!--<ul>
                <li class="active"><a href='index.php'><span>Home</span></a></li>
                <li><a href="<?php echo get_site_url('Home'); ?>/?page_id=5"><span>About Us</span></a></li>
@@ -141,8 +142,8 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="img-responsive" alt=""/></a>
 				<div class="srchh"><?php dynamic_sidebar('blogsearch');?></div>
 				</div></div>
-            
+
       </div>
-      
-   
+
+
 <?php wp_footer(); ?>
