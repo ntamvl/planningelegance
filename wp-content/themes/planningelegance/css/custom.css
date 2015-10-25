@@ -173,3 +173,35 @@
 .space-20 {
   height: 20px;
 }
+
+.circle-image{
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    /*background-image:url("http://placekitten.com/g/200/400");*/
+    display: block;
+    background-position-y: 25%;
+    overflow: hidden;
+    border-bottom: 2px #fff solid;
+}
+
+.testimo-title {
+  margin-top: 20px;
+}
+
+.testimo-date {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #808080;
+  font-size: 0.8em;
+}
+
+.testimo-title, .testimo-title h2, .testimo-title a {
+  color: #444444;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+.testimo-title h2 {
+  margin-bottom: 0;
+}
