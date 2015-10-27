@@ -28,7 +28,7 @@ get_header(); ?>
         <!-- <div class="col-md-6">
             <img class="img-responsive" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>">
         </div> -->
-        <div class="col-md-12">
+        <div class="col-md-12 about-link">
             <?php the_content(); ?>
         </div>
         <?php

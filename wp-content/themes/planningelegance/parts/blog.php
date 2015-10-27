@@ -28,6 +28,20 @@
             <div class="blog-content">
                 <?php the_excerpt(); ?>
             </div>
+
+            <div>
+                <div class="photoset-grid-basic" data-layout="12" style="visibility: hidden;">
+                    <?php if (get_field('thumbnail_1')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'large')[0]; ?>">
+                    <?php } ?>
+                    <?php if (get_field('thumbnail_2')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'large')[0]; ?>">
+                    <?php } ?>
+                    <?php if (get_field('thumbnail_3')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_3') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_3') , 'large')[0]; ?>">
+                    <?php } ?>
+                </div>
+            </div>
         </div>
     </div>
     <div class="blog-line"></div>
@@ -40,3 +54,17 @@
     </div>
     <div class="subscrbBX hide"><?php dynamic_sidebar('subscribenow'); ?></div>
 </section>
+
+<script type="text/javascript">
+
+    $('.photoset-grid-basic').photosetGrid({
+        gutter: '5px',
+        borderActive: true,
+        borderWidth: '3px',
+        borderColor: '#fff',
+        onComplete: function(){
+            $('.photoset-grid-basic').attr('style', '');
+        }
+    });
+
+</script>

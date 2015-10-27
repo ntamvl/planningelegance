@@ -18,8 +18,10 @@
     <div class="row news blog">
         <div class="col-md-3">
             <?php if($imgurl): ?>
-                <!-- <img class="img-responsive img-thumbnail img-circle circle-image" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>"> -->
+            <!-- <img class="img-responsive img-thumbnail img-circle circle-image" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>"> -->
+            <a href="<?php the_permalink($post->ID); ?>">
                 <img class="circle-image" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>">
+            </a>
             <?php endif; ?>
             <center class="testimo-title">
                 <h2 class="news-title">
@@ -31,8 +33,9 @@
         </div>
         <div class="col-md-9">
             <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>
-            <div class="news-content">
-                <?php the_excerpt(); ?>
+            <div class="news-content i-text">
+                <?php // the_excerpt(); ?>
+                <?php echo get_excerpt(1200); ?>
             </div>
         </div>
     </div>

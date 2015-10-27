@@ -153,6 +153,7 @@
 
 .news-content {
   color: #000;
+  line-height: 1.6em;
 }
 
 .news-content a {
@@ -204,4 +205,13 @@
 
 .testimo-title h2 {
   margin-bottom: 0;
+}
+
+.i-text {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.about-link, .about-link a {
+  color: #fadc6a;
 }

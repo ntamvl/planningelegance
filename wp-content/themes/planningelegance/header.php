@@ -51,6 +51,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.photoset-grid.js"></script>
+
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
