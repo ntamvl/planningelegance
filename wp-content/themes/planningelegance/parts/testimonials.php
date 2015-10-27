@@ -17,6 +17,7 @@
     <?php $imgurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
     <div class="row news blog">
         <div class="col-md-3">
+            <i class="fa fa-quote-left fa-2x fa-pull-right testimo-position"></i>
             <?php if($imgurl): ?>
             <!-- <img class="img-responsive img-thumbnail img-circle circle-image" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>"> -->
             <a href="<?php the_permalink($post->ID); ?>">
@@ -30,10 +31,12 @@
                 <div class="testimo-date">WEDDING DATE | <?php echo get_the_date(); ?></div>
                 <!-- <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div> -->
             </center>
+
         </div>
         <div class="col-md-9">
             <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>
             <div class="news-content i-text">
+                <!-- <i class="fa fa-quote-left fa-2x fa-pull-left testimo-position"></i> -->
                 <?php // the_excerpt(); ?>
                 <?php echo get_excerpt(1200); ?>
             </div>
