@@ -10,7 +10,9 @@ get_header(); ?>
 <section id="innrbox">
     <div class="row">
         <div class="col-lg-12">
-            <h1 style="margin:10px 0px;">ABOUT THE PLANNING ELEGANCE TEAM</h1>
+            <center class="blog-category-title">
+                <h1 style="margin:10px 0px;"><?php the_title(); ?></h1>
+            </center>
             <ol class="breadcrumb">
                 <?php
                 if (function_exists('bcn_display')) {

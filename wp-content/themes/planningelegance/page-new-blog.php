@@ -1,11 +1,11 @@
 <?php
 /**
-* Template Name: New Blog
-*
-* @package WordPress
-* @subpackage Twenty_Fourteen
-* @since Twenty Fourteen 1.0
-*/
+ * Template Name: New Blog
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
 get_header(); ?>
 <section id="innrbox">
     <div class="row">
@@ -21,6 +21,7 @@ get_header(); ?>
     </div>
     <div class="row">
         <br/>
+
         <div class="col-lg-12">
             <?php
             while (have_posts()): the_post();
@@ -31,8 +32,10 @@ get_header(); ?>
     </div>
     <div class="row">
         <center>
-            <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'planningelegance' ) . '</span> %title' ); ?></span>
-            <span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'planningelegance' ) . '</span>' ); ?></span>
+            <span
+                class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . _x('&larr;', 'Previous post link', 'planningelegance') . '</span> %title'); ?></span>
+            <span
+                class="nav-next"><?php next_post_link('%link', '%title <span class="meta-nav">' . _x('&rarr;', 'Next post link', 'planningelegance') . '</span>'); ?></span>
         </center>
     </div>
     <div class="subscrbBX hide"><?php dynamic_sidebar('subscribenow'); ?></div>
