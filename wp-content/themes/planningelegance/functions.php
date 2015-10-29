@@ -629,6 +629,7 @@ function setup_custom_image() {
   // when you upload a new image. Register as many as needed.
   // Adding custom image sizes (name, width, height, crop)
   add_image_size( 'featured-image', 620, 200, true );
+  add_image_size( 'featured-blog-image', 730, 210, true );
   add_image_size( 'news-thumb', 308, 204, true );
 }
 
@@ -636,7 +637,8 @@ add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
 function custom_image_sizes_choose( $sizes ) {
     $custom_sizes = array(
         'featured-image' => 'Featured Image',
-        'news-thumb' => 'News Thumbnail'
+        'news-thumb' => 'News Thumbnail',
+        'featured-blog-image' => 'Featured Blog Image'
     );
     return array_merge( $sizes, $custom_sizes );
 }

@@ -32,7 +32,7 @@
             <div>
                 <div class="photoset-grid-basic" data-layout="12" style="visibility: hidden;">
                     <?php if (get_field('thumbnail_1')) { ?>
-                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'large')[0]; ?>">
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'featured-blog-image')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'large')[0]; ?>">
                     <?php } ?>
                     <?php if (get_field('thumbnail_2')) { ?>
                         <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'large')[0]; ?>">
