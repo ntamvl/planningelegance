@@ -15,11 +15,11 @@
     <div class="space-20"></div>
     <?php while (have_posts()): the_post(); ?>
     <?php $imgurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
-    <?php $thumb_url = wp_get_attachment_thumb_url( get_post_thumbnail_id($post->ID) ); ?>
+    <?php $thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'news-thumb' )[0]; ?>
 
     <div class="row news blog">
         <div class="col-md-5">
-            <?php if($imgurl): ?>
+            <?php if($thumb_url): ?>
                 <img class="img-thumbnail news-thumbnail" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
             <?php endif; ?>
         </div>

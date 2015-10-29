@@ -615,6 +615,33 @@ function get_excerpt($count){
     return $excerpt;
 }
 
+// start custom image size
+add_action( 'after_setup_theme', 'setup_custom_image' );
+function setup_custom_image() {
+	add_theme_support( 'post-thumbnails' ); // This feature enables post-thumbnail support for a theme
+  // To enable only for posts:
+  //add_theme_support( 'post-thumbnails', array( 'post' ) );
+  // To enable only for posts and custom post types:
+  //add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) );
+
+  // Register a new image size.
+  // This means that WordPress will create a copy of the post image with the specified dimensions
+  // when you upload a new image. Register as many as needed.
+  // Adding custom image sizes (name, width, height, crop)
+  add_image_size( 'featured-image', 620, 200, true );
+  add_image_size( 'news-thumb', 308, 204, true );
+}
+
+add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
+function custom_image_sizes_choose( $sizes ) {
+    $custom_sizes = array(
+        'featured-image' => 'Featured Image',
+        'news-thumb' => 'News Thumbnail'
+    );
+    return array_merge( $sizes, $custom_sizes );
+}
+// end custom image size
+
 // update_option('siteurl', 'http://planningelegance.nhantamio.com');
 // update_option('home', 'http://planningelegance.nhantamio.com');
 
