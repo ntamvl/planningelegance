@@ -629,7 +629,7 @@ function setup_custom_image() {
   // when you upload a new image. Register as many as needed.
   // Adding custom image sizes (name, width, height, crop)
   add_image_size( 'featured-image', 620, 200, true );
-  add_image_size( 'featured-blog-image', 730, 210, true );
+  add_image_size( 'featured-blog-image', 730, 310, true );
   add_image_size( 'news-thumb', 308, 204, true );
 }
 
