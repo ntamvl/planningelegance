@@ -220,3 +220,7 @@
   color: #5ec2cc;
   font-weight: lighter;
 }
+
+.news-thumbnail {
+  width: 90%;
+}
