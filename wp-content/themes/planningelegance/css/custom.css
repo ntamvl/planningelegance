@@ -151,6 +151,11 @@
   color: #2b99a3;
 }
 
+.news-title-2, .news-title-2 h2, .news-title-2 a {
+  color: #2b99a3;
+  font-size: 1.3em;
+}
+
 .news-content {
   color: #000;
   line-height: 1.6em;
@@ -207,6 +212,28 @@
   margin-bottom: 0;
 }
 
+.testimo-title-2, .testimo-title-2 h2, .testimo-title-2 a {
+  color: #444444;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.testimo-summary-2, .testimo-summary-2 p {
+  font-weight: lighter;
+  font-size: 0.83em;
+  text-align: justify;
+  color: #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.testimo-sub-2 {
+  font-weight: lighter;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #1893a2;
+}
+
 .i-text {
   font-style: italic;
   font-weight: lighter;
@@ -223,4 +250,55 @@
 
 .news-thumbnail {
   width: 90%;
+}
+
+.sounth-link-rq {
+  padding-bottom: 30px;
+}
+
+.no-margin-left {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+
+.no-margin-right {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
 }
