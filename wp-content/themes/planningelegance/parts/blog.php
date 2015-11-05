@@ -14,10 +14,12 @@
     </div>
     <?php while (have_posts()): the_post(); ?>
     <?php $imgurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
+    <?php if (get_field('only_show_images') != true) { ?>
     <div class="row blog">
         <div class="col-md-4">
             <h2>
                 <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
+                <?php echo get_field('only_show_images') == true ? "TRUE" : "FALSE"; ?>
             </h2>
             <span class="entry-date"><?php echo get_the_date(); ?></span>
         </div>
@@ -30,7 +32,10 @@
             </div>
 
             <div>
-                <div class="photoset-grid-basic" data-layout="12" style="visibility: hidden;">
+                <?php if (get_field('image_preview')) { ?>
+                    <img class="img-responsive img-thumbnail" src="<?php echo get_field('image_preview'); ?>" alt="<?php the_title(); ?>">
+                <?php } ?>
+                <div class="photoset-grid-basic hide" data-layout="12" style="visibility: hidden;">
                     <?php if (get_field('thumbnail_1')) { ?>
                         <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'featured-blog-image')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'large')[0]; ?>">
                     <?php } ?>
@@ -44,6 +49,42 @@
             </div>
         </div>
     </div>
+    <?php } else { ?>
+    <div class="row blog">
+        <div class="col-md-4">
+            <h2>
+                <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
+                <?php echo get_field('only_show_images') == true ? "TRUE" : "FALSE"; ?>
+            </h2>
+            <span class="entry-date"><?php echo get_the_date(); ?></span>
+        </div>
+        <div class="col-md-8">
+            <?php if (get_field('image_preview')) { ?>
+                <img class="img-responsive img-thumbnail" src="<?php echo get_field('image_preview'); ?>" alt="<?php the_title(); ?>">
+            <?php } ?>
+            <div class="blog-content hide">
+                <?php the_excerpt(); ?>
+            </div>
+
+            <div class="hide">
+                <?php if (get_field('image_preview')) { ?>
+                    <img class="img-responsive img-thumbnail" src="<?php echo get_field('image_preview'); ?>" alt="<?php the_title(); ?>">
+                <?php } ?>
+                <div class="photoset-grid-basic hide" data-layout="12" style="visibility: hidden;">
+                    <?php if (get_field('thumbnail_1')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'featured-blog-image')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_1') , 'large')[0]; ?>">
+                    <?php } ?>
+                    <?php if (get_field('thumbnail_2')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_2') , 'large')[0]; ?>">
+                    <?php } ?>
+                    <?php if (get_field('thumbnail_3')) { ?>
+                        <img src="<?php echo wp_get_attachment_image_src( get_field('thumbnail_3') , 'medium')[0]; ?>" data-highres="<?php echo wp_get_attachment_image_src( get_field('thumbnail_3') , 'large')[0]; ?>">
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php }  ?>
     <div class="blog-line"></div>
     <?php endwhile; ?>
     <div class="row hide">
