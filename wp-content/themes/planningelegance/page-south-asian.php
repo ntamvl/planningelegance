@@ -135,39 +135,41 @@ get_header(); ?>
                     </center>
                 </div>
             </div>
-            <div class="col-lg-8 ">
-                <h2 class="no-margin-left no-margin-top">Planning Elegance on the set of 90210</h2>
+            <div class="col-lg-8">
+                <div class="margin-left-20">
+                    <h2 class="no-margin-left no-margin-top">Planning Elegance on the set of 90210</h2>
 
-                <p class="wht-fnt">Working in the Wedding Industry is definitely very fulfilling, and amazing to be a
-                    part
-                    of. Being able to help couples start the beginning of their lives together is a feeling that is most
-                    enduring to engage with. Being a wedding planner in California also allows you to participate in
-                    events
-                    that are not part of the traditional Wedding Industry. Recently, we had the amazing opportunity to
-                    work
-                    with the CW’s 90210 Production Team and the experience was so much fun from beginning to end. From
-                    sitting in on production meetings to guiding the cast and crew on filming days, I was very fortunate
-                    to
-                    be a part of the 90210 team for several weeks. This 90210 season finale was aired on Monday, May 16,
-                    2011.</p>
+                    <p class="wht-fnt">Working in the Wedding Industry is definitely very fulfilling, and amazing to be a
+                        part
+                        of. Being able to help couples start the beginning of their lives together is a feeling that is most
+                        enduring to engage with. Being a wedding planner in California also allows you to participate in
+                        events
+                        that are not part of the traditional Wedding Industry. Recently, we had the amazing opportunity to
+                        work
+                        with the CW’s 90210 Production Team and the experience was so much fun from beginning to end. From
+                        sitting in on production meetings to guiding the cast and crew on filming days, I was very fortunate
+                        to
+                        be a part of the 90210 team for several weeks. This 90210 season finale was aired on Monday, May 16,
+                        2011.</p>
 
-                <h2 class="no-margin-left">Planning Elegance’s Involvement</h2>
+                    <h2 class="no-margin-left">Planning Elegance’s Involvement</h2>
 
-                <p class="wht-fnt">Planning Elegance was approached by one of the producers of 90210. We were asked to
-                    play
-                    the role of technical advisor to the 90210 production team in some of the South Asian Hindu Ceremony
-                    aspects of the season finale. We jumped on the opportunity and decided to fit the 90210 meeting and
-                    filming schedule into our schedule by collaborating as a team.</p>
+                    <p class="wht-fnt">Planning Elegance was approached by one of the producers of 90210. We were asked to
+                        play
+                        the role of technical advisor to the 90210 production team in some of the South Asian Hindu Ceremony
+                        aspects of the season finale. We jumped on the opportunity and decided to fit the 90210 meeting and
+                        filming schedule into our schedule by collaborating as a team.</p>
 
-                <p class="wht-fnt">I was personally involved in the entire process. Using my strong background in
-                    wedding
-                    planning and coordination, I was easily able to give the directors, producers, and writers of the
-                    show
-                    advice and direction on certain South Asian traditions and cultures. Hired as a Technical Advisor, I
-                    participated in production meetings, director meetings, as well as filming days to help guide the
-                    directors to reach their goal of creating an authentic Indian Wedding – attention to detail is what
-                    they
-                    strove for.</p>
+                    <p class="wht-fnt">I was personally involved in the entire process. Using my strong background in
+                        wedding
+                        planning and coordination, I was easily able to give the directors, producers, and writers of the
+                        show
+                        advice and direction on certain South Asian traditions and cultures. Hired as a Technical Advisor, I
+                        participated in production meetings, director meetings, as well as filming days to help guide the
+                        directors to reach their goal of creating an authentic Indian Wedding – attention to detail is what
+                        they
+                        strove for.</p>
+                </div>
             </div>
         </div>
     </div>
