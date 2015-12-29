@@ -1,0 +1,308 @@
+.portfolio-item {
+  background-color: #fff;
+  padding: 44px 40px;
+  margin-left: 14px;
+  margin-right: 0px !important;
+  margin-bottom: 10px;
+}
+
+.portfolio-item h2 {
+  color: #000;
+}
+
+.portfolio-item a {
+  color: #000;
+}
+
+.portfolio-item a:hover {
+  color: #65b5be;
+}
+
+.portfolio-title {
+  color: #000;
+  font-size: 2.2em;
+}
+
+.portfolio-title-sub {
+  color: #000;
+  font-size: 1.3em;
+}
+
+.portfolio-title-line {
+  border-bottom: 1px #65b5be solid;
+  padding-top: 10px;
+  width: 70px;
+}
+
+.portfolio-content {
+  color: #444444;
+  padding-top: 10px;
+}
+
+.portfolio-detail {
+  margin-top: 40px;
+}
+
+.portfolio-detail h1 {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.portfolio-detail h4 {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.blog {
+  margin-top: 40px;
+}
+
+.blog h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-left: 0;
+  padding-bottom: 10px;
+}
+
+.blog-line {
+  border-bottom: 1px #65b5be solid;
+  padding: 10px 0 10px 0;
+}
+
+.blog-content {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.blog-content a {
+  color: #444;
+}
+
+.img-thumbnail {
+  padding: 1px !important;
+}
+
+.blog-paginate {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.entry-date {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.9em;
+  padding: 10px;
+}
+
+.news-entry-date {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.9em;
+  padding: 10px 0 10px 0;
+}
+
+.blog-detail {
+  margin-top: 0px;
+}
+
+.nav-previous, .nav-next {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.blog-breadcrumb {
+  margin-top: 40px;
+}
+
+.blog-category-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.blog-category-title h1 {
+  font-weight: lighter;
+  font-size: 2.4em;
+}
+
+.blog-detail-thumb {
+  margin-top: 20px;
+}
+
+.blog-single-content {
+  padding-top: 10px;
+}
+
+.news {
+  background-color: #fff;
+  padding-top: 37px;
+  padding-bottom: 45px;
+  padding-left: 35px;
+  padding-right: 40px;
+  margin-left: 15px;
+  margin-right: 0px !important;
+  margin-top: 10px;
+}
+
+.news-title, .news-title h2, .news-title a {
+  color: #2b99a3;
+}
+
+.news-title-2, .news-title-2 h2, .news-title-2 a {
+  color: #2b99a3;
+  font-size: 1.3em;
+}
+
+.news-content {
+  color: #000;
+  line-height: 1.6em;
+}
+
+.news-content a {
+  color: #2b99a3;
+}
+
+.news-subtitle {
+  color: #000;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.news-line {
+  border-bottom: 1px #65b5be solid;
+  padding: 30px 0 10px 15px;
+}
+
+.space-20 {
+  height: 20px;
+}
+
+.circle-image{
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    /*background-image:url("http://placekitten.com/g/200/400");*/
+    display: block;
+    background-position-y: 25%;
+    overflow: hidden;
+    border-bottom: 2px #fff solid;
+}
+
+.testimo-title {
+  margin-top: 20px;
+}
+
+.testimo-date {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #808080;
+  font-size: 0.8em;
+}
+
+.testimo-title, .testimo-title h2, .testimo-title a {
+  color: #444444;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+.testimo-title h2 {
+  margin-bottom: 0;
+}
+
+.testimo-title-2, .testimo-title-2 h2, .testimo-title-2 a {
+  color: #444444;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.testimo-summary-2, .testimo-summary-2 p {
+  font-weight: lighter;
+  font-size: 0.83em;
+  text-align: justify;
+  color: #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.testimo-sub-2 {
+  font-weight: lighter;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #1893a2;
+}
+
+.i-text {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.about-link, .about-link a {
+  color: #fadc6a;
+}
+
+.testimo-position {
+  color: #5ec2cc;
+  font-weight: lighter;
+}
+
+.news-thumbnail {
+  width: 90%;
+}
+
+.sounth-link-rq {
+  padding-bottom: 30px;
+}
+
+.no-margin-left {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+
+.no-margin-right {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}

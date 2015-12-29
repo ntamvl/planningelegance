@@ -11,49 +11,25 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<?php $current_category = single_cat_title("", false); ?>
 
-			<?php if ( have_posts() ) : ?>
-
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
-
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .archive-header -->
-
-			<?php
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
-
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-
-					endwhile;
-					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
-
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
-			?>
-		</div><!-- #content -->
-	</section><!-- #primary -->
-<center><span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-					<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span></center>
 <?php
-//get_sidebar( 'content' );
-//get_sidebar();
+if (strtolower($current_category) == "blog") get_template_part('parts/blog');
+elseif (strtolower($current_category) == "news") {
+	get_template_part('parts/news');
+} elseif (strtolower($current_category) == "testimonials") {
+	get_template_part('parts/testimonials');
+} else {
+	get_template_part('parts/blog');
+}
+
+?>
+<div class="row blog-paginate">
+	<div class="col-md-12 text-center">
+		<?php if ( function_exists('wp_bootstrap_pagination') ) wp_bootstrap_pagination(); ?>
+	</div>
+</div>
+
+<?php
+
 get_footer();
