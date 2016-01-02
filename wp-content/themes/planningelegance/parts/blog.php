@@ -19,7 +19,6 @@
         <div class="col-md-4">
             <h2>
                 <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
-                <?php echo get_field('only_show_images') == true ? "TRUE" : "FALSE"; ?>
             </h2>
             <span class="entry-date"><?php echo get_the_date(); ?></span>
         </div>
@@ -54,7 +53,6 @@
         <div class="col-md-4">
             <h2>
                 <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
-                <?php echo get_field('only_show_images') == true ? "TRUE" : "FALSE"; ?>
             </h2>
             <span class="entry-date"><?php echo get_the_date(); ?></span>
         </div>
