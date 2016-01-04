@@ -28,7 +28,7 @@
                 <h2 class="news-title">
                     <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
                 </h2>
-                <div> <?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div>
+                <!-- <div> <?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div> -->
                 <div class="testimo-date">WEDDING DATE | <?php echo get_the_date(); ?></div>
                 <!-- <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div> -->
             </center>
