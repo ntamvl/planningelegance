@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-8">
             <h2 class="news-title">
-                <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
+                <?php the_title(); ?>
             </h2>
             <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div>
             <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>

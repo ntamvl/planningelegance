@@ -43,13 +43,12 @@ get_header(); ?>
       <?php $imgurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
       <div class="row portfolio-item">
           <div class="col-md-3">
-            <a href="<?php the_permalink() ?>" alt="<?php the_title(); ?>">
-              <img class="img-responsive" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>"></a>
+
+              <img class="img-responsive" src="<?php echo $imgurl; ?>" alt="<?php the_title(); ?>">
           </div>
           <div class="col-md-9">
             <div class="portfolio-title">
-              <a href="<?php the_permalink() ?>" alt="<?php the_title(); ?>">
-                <?php the_title(); ?></a>
+              <?php the_title(); ?>
             </div>
             <div class="portfolio-title-sub"><?php the_field('duty'); ?></div>
             <div class="portfolio-title-line"></div>

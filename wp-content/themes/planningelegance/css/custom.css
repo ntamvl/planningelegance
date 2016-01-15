@@ -1,3 +1,7 @@
+.add-spacing{
+   letter-spacing: 3px;
+   font-weight: 600;
+}
 .portfolio-item {
   background-color: #fff;
   padding: 44px 40px;

@@ -39,7 +39,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <h2 style="margin-top: 0px; margin-left: 0px;">SOUTH ASIAN WEDDINGS</h2>
+                    <h2 style="margin-top: 0px; margin-left: 0px;">South Asian Weddings</h2>
 
                     <div class="southtxt">
                         <p class="wht-fnt">Planning Elegance specializes in South Asian and Fusion Weddings. We can help
@@ -82,13 +82,14 @@ get_header(); ?>
 
         <div class="col-lg-12 paddNone">
             <div class="breadcrumb margin-top-50 margin-bottom-50">
-                <center>SHAADI VENDORS WEDDING PROFESSIONALS</center>
+                <center class="add-spacing">SHAADI VENDORS WEDDING PROFESSIONALS</center>
             </div>
             <div class="col-md-5 no-margin-left">
                 <iframe src="//player.vimeo.com/video/24809562" width="500" height="281" frameborder="0"
                         webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <div class="col-md-6">
+                <h2 style="margin-top: 0px; margin-left: 0px;">Planning Elegance is part of The Shaadi Vendors Wedding Professionals</h2>
                 <p class="wht-fnt">Shaadi Vendors is a team of wed professionals that specialize in South Asian
                     weddings. Shaadi Vendors offers five core wedding services through one hard-working team of wedding
                     vendors. These services include DJ, lighting, photography, videography, and event coordination. We
@@ -108,7 +109,7 @@ get_header(); ?>
 
     <div class="row">
         <div class="breadcrumb margin-top-50">
-            <center>ON THE SET OF 90210</center>
+            <center class="add-spacing">ON THE SET OF 90210</center>
         </div>
 
         <div class="row margin-top-40">
