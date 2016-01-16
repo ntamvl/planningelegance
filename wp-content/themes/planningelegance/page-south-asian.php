@@ -26,20 +26,20 @@ get_header(); ?>
             <div class="row">
                 <div class="col-md-4 no-margin-left">
                     <div class="col-md-12 sounth-link-rq no-margin-left no-margin-right">
-                        <a target="_blank" class="btn btn-warning btn-full-width" type="button"
-                           href="<?php echo get_site_url(); ?>/?page_id=35">Request a free quote today!</a>
+                        <a target="_blank" class="btn btn-warning btn-full-width btn-custom" type="button"
+                           href="<?php echo get_site_url(); ?>/?page_id=35">request a free quote today!</a>
                     </div>
                     <div class="col-md-12 no-margin-left no-margin-right margin-bottom-20">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/south-indian1.jpg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/south-indian5.png"
                              class="img-responsive" alt=""/>
                     </div>
                     <div class="col-md-12 no-margin-left no-margin-right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/south-indian2.jpg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/south-indian4.png"
                              class="img-responsive" alt=""/>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <h2 style="margin-top: 0px; margin-left: 0px;">SOUTH ASIAN WEDDINGS</h2>
+                    <h2 style="margin-top: 0px; margin-left: 0px;">South Asian Weddings</h2>
 
                     <div class="southtxt">
                         <p class="wht-fnt">Planning Elegance specializes in South Asian and Fusion Weddings. We can help
@@ -73,8 +73,8 @@ get_header(); ?>
                             can ease your wedding planning experience. We are happy to adjust packages to your budget
                             and meet your needs, so contact us today to see how we can help you.</p>
 
-                        <a target="_blank" class="btn btn-warning" type="button"
-                           href="<?php echo get_site_url(); ?>/?page_id=35">Request a free quote today!</a>
+                        <a target="_blank" class="btn btn-warning btn-custom" type="button"
+                           href="<?php echo get_site_url(); ?>/?page_id=35">request a free quote today!</a>
                     </div>
                 </div>
             </div>
@@ -82,13 +82,14 @@ get_header(); ?>
 
         <div class="col-lg-12 paddNone">
             <div class="breadcrumb margin-top-50 margin-bottom-50">
-                <center>SHAADI VENDORS WEDDING PROFESSIONALS</center>
+                <center class="add-spacing">SHAADI VENDORS WEDDING PROFESSIONALS</center>
             </div>
-            <div class="col-lg-6 no-margin-left no-margin-right">
+            <div class="col-md-5 no-margin-left">
                 <iframe src="//player.vimeo.com/video/24809562" width="500" height="281" frameborder="0"
                         webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-            <div class="col-lg-6 no-margin-left">
+            <div class="col-md-6">
+                <h2 style="margin-top: 0px; margin-left: 0px;">Planning Elegance is part of The Shaadi Vendors Wedding Professionals</h2>
                 <p class="wht-fnt">Shaadi Vendors is a team of wed professionals that specialize in South Asian
                     weddings. Shaadi Vendors offers five core wedding services through one hard-working team of wedding
                     vendors. These services include DJ, lighting, photography, videography, and event coordination. We
@@ -108,14 +109,14 @@ get_header(); ?>
 
     <div class="row">
         <div class="breadcrumb margin-top-50">
-            <center>ON THE SET OF 90210</center>
+            <center class="add-spacing">ON THE SET OF 90210</center>
         </div>
 
         <div class="row margin-top-40">
             <div class="col-lg-4 no-margin-left bg-white">
                 <div class="margin-top-30 ">
                     <center class="testimo-title-2">
-                        <img class="circle-image" src="<?php echo get_template_directory_uri(); ?>/images/south-indian3.jpg" alt="Planning Elegance Team Member – Mili Shah">
+                        <img class="circle-image" src="<?php echo get_template_directory_uri(); ?>/images/mili_circle.png" alt="Planning Elegance Team Member – Mili Shah">
                         <h2>Mili R.Shah</h2>
                         <div class="testimo-sub-2 margin-bottom-40">Planning Elegance Owner</div>
                         <div class="col-md-12 testimo-summary-2">

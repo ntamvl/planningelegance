@@ -28,6 +28,7 @@
                 <h2 class="news-title">
                     <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
                 </h2>
+                <!-- <div> <?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div> -->
                 <div class="testimo-date">WEDDING DATE | <?php echo get_the_date(); ?></div>
                 <!-- <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div> -->
             </center>
@@ -37,8 +38,8 @@
             <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>
             <div class="news-content i-text">
                 <!-- <i class="fa fa-quote-left fa-2x fa-pull-left testimo-position"></i> -->
-                <?php // the_excerpt(); ?>
-                <?php echo get_excerpt(1200); ?>
+                <?php the_content(); ?>
+                <?php //echo get_excerpt(1200); ?>
             </div>
         </div>
     </div>

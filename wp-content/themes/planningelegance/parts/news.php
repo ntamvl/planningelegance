@@ -18,20 +18,20 @@
     <?php $thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'news-thumb' )[0]; ?>
 
     <div class="row news blog">
-        <div class="col-md-5">
+        <div class="col-md-4">
             <?php if($thumb_url): ?>
-                <img class="img-thumbnail news-thumbnail" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+                <img class="img-thumbnail" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
             <?php endif; ?>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-8">
             <h2 class="news-title">
-                <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
+                <?php the_title(); ?>
             </h2>
             <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div>
             <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>
 
             <div class="news-content">
-                <?php the_excerpt(); ?>
+                <?php the_content(); ?>
             </div>
         </div>
     </div>

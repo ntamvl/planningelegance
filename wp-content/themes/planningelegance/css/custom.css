@@ -1,3 +1,7 @@
+.add-spacing{
+   letter-spacing: 3px;
+   font-weight: 600;
+}
 .portfolio-item {
   background-color: #fff;
   padding: 44px 40px;
@@ -84,6 +88,7 @@
 
 .img-thumbnail {
   padding: 1px !important;
+  border: none !important;
 }
 
 .blog-paginate {
@@ -293,8 +298,14 @@
 
 .btn-full-width {
   width: 100%;
-}
 
+}
+.btn-custom{
+  padding: 12px !important;
+  background-color: #f8dc6b !important;
+  border-color: #f8dc6b !important;
+  text-transform: uppercase !important;
+}
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
