@@ -29,7 +29,17 @@
                     <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
                 </h2>
                 <!-- <div> <?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div> -->
-                <div class="testimo-date">WEDDING DATE | <?php echo get_the_date(); ?></div>
+                <?php
+                $wedding_date = date('F j, Y');
+                $wedding_date_value = get_field('wedding_date');
+                if ( $wedding_date_value ) {
+                    $date_value = DateTime::createFromFormat('Ymd', $wedding_date_value);
+                    $wedding_date = $date_value->format('F j, Y');
+                } else {
+                    $wedding_date = date('F j, Y');
+                }
+                ?>
+                <div class="testimo-date">WEDDING DATE | <?php echo $wedding_date; ?></div>
                 <!-- <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div> -->
             </center>
 
