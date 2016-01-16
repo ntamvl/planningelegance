@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'plannin5_planning_2');
+define('DB_NAME', 'plannin5_planning_2_v2');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -80,3 +80,6 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 define('FS_METHOD', 'direct');
+
+// define('WP_HOME','http://167.160.168.77:85');
+// define('WP_SITEURL','http://167.160.168.77:85');
