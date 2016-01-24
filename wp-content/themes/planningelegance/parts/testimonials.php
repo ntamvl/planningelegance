@@ -13,7 +13,15 @@
         </div>
     </div>
     <div class="space-20"></div>
-    <?php while (have_posts()): the_post(); ?>
+    <?php
+    $the_query = new WP_Query(array(
+        'post_type'         => 'post',
+        'meta_key'          => 'wedding_date',
+        'orderby'           => 'meta_value_num',
+        'order'             => 'DESC'
+    ));
+    ?>
+    <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
     <?php $imgurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
     <div class="row news blog">
         <div class="col-md-3">
