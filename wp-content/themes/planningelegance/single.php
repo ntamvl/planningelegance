@@ -29,8 +29,18 @@ get_header(); ?>
       </div>
       <?php endif; ?>
       <h1><?php the_title()?></h1>
+      <?php
+        $wedding_date = date('F j, Y');
+        $wedding_date_value = get_field('wedding_date');
+        if ( $wedding_date_value ) {
+            $date_value = DateTime::createFromFormat('Ymd', $wedding_date_value);
+            $wedding_date = $date_value->format('F j, Y');
+        } else {
+            $wedding_date = date('F j, Y');
+        }
+      ?>
       <div class="blog-date">
-        <span class="entry-date"><?php echo get_the_date(); ?></span>
+        <span class="entry-date"><?php echo $wedding_date; ?></span>
       </div>
       <div class="blog-single-content">
         <?php the_content()?>
