@@ -8,7 +8,7 @@
 	Text Domain: osd-blog-search-widget
 	License: GPL2v2
 	*/
-	
+
 	class osd_blog_search_widget extends WP_Widget {
 		public function __construct() {
 			parent::__construct(
@@ -19,45 +19,45 @@
 				array('description' => __('Search form for searching blog posts only.', 'osd-blog-search-widget')) // Args
 			);
 		}
-	 
+
 	 	// Output to the sidebars
 		public function widget($args, $instance) {
-			extract($args);	 
+			extract($args);
 			$title = apply_filters('widget_title', $instance['title']);
 			$extra_menu_args = array('container' => '', 'walker_args' => array());
 
 			echo $before_widget;
-	 
+
 			if (!empty($title)) {
 				echo $before_title . $title . $after_title;
 			}
-			
+
 			echo "<div class='search-form' id='osd-blog-search'>
 					<form method='get' action='".home_url('/')."'>
 						<input type='hidden' name='post_type' value='post' />
 						<input type='text' name='s' id='s' value='' placeholder='".$instance['placeholder']."' />
 						<input id='' class='srchBtn' type='image' alt='Search' />
 					</form>
-				</div>"; 
+				</div>";
 			echo $after_widget;
 		}
-	 
+
 	 	// Admin menu options
 		public function form($instance) {
 			?>
 			<p>
 				<?php /* translators: Widget Field: Title */ ?>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'osd-blog-search-widget'); ?></label> 
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'osd-blog-search-widget'); ?></label>
 				<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $instance["title"] ); ?>" />
 			</p>
 			<p>
 				<?php /* translators: Widget Field: Placeholder */ ?>
-				<label for="<?php echo $this->get_field_id( 'placeholder' ); ?>"><?php _e('Placeholder:', 'osd-blog-search-widget'); ?></label> 
+				<label for="<?php echo $this->get_field_id( 'placeholder' ); ?>"><?php _e('Placeholder:', 'osd-blog-search-widget'); ?></label>
 				<input class="widefat" id="<?php echo $this->get_field_id( 'placeholder' ); ?>" name="<?php echo $this->get_field_name( 'placeholder' ); ?>" type="text" value="<?php echo esc_attr( $instance["placeholder"] ); ?>" />
 			</p>
             <?php
 		}
-	 
+
 	 	// Update the instance
 		public function update($new_instance, $old_instance) {
 			$instance = array();

@@ -14,8 +14,9 @@
     </div>
     <div class="space-20"></div>
     <?php
+    $cat_id = the_category_ID($echo=false);
     $the_query = new WP_Query(array(
-        'post_type'         => 'post',
+        'cat' => $cat_id,
         'meta_key'          => 'wedding_date',
         'orderby'           => 'meta_value_num',
         'order'             => 'DESC'

@@ -20,7 +20,17 @@
             <h2>
                 <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
             </h2>
-            <span class="entry-date"><?php echo get_the_date(); ?></span>
+            <?php
+                $wedding_date = date('F j, Y');
+                $wedding_date_value = get_field('wedding_date');
+                if ( $wedding_date_value ) {
+                    $date_value = DateTime::createFromFormat('Ymd', $wedding_date_value);
+                    $wedding_date = $date_value->format('F j, Y');
+                } else {
+                    $wedding_date = date('F j, Y');
+                }
+            ?>
+            <span class="entry-date"><?php echo $wedding_date; ?></span>
         </div>
         <div class="col-md-8">
             <?php if($imgurl): ?>
@@ -54,7 +64,17 @@
             <h2>
                 <a href="<?php the_permalink($post->ID); ?>"><?php the_title(); ?></a>
             </h2>
-            <span class="entry-date"><?php echo get_the_date(); ?></span>
+            <?php
+                $wedding_date = date('F j, Y');
+                $wedding_date_value = get_field('wedding_date');
+                if ( $wedding_date_value ) {
+                    $date_value = DateTime::createFromFormat('Ymd', $wedding_date_value);
+                    $wedding_date = $date_value->format('F j, Y');
+                } else {
+                    $wedding_date = date('F j, Y');
+                }
+            ?>
+            <span class="entry-date"><?php echo $wedding_date; ?></span>
         </div>
         <div class="col-md-8">
             <?php if (get_field('image_preview')) { ?>

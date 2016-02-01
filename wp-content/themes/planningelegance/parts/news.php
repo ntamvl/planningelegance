@@ -24,12 +24,15 @@
             <?php endif; ?>
         </div>
         <div class="col-md-8">
+            <?php if (get_the_title()) { ?>
             <h2 class="news-title">
                 <?php the_title(); ?>
             </h2>
+            <?php } ?>
+            <?php if (get_field('news_subtitle')) { ?>
             <div class="news-subtitle"><?php the_field('news_subtitle'); ?></div>
-            <span class="news-entry-date hide"><?php echo get_the_date(); ?></span>
-
+            <!-- <span class="news-entry-date hide"><?php echo get_the_date(); ?></span> -->
+            <?php } ?>
             <div class="news-content">
                 <?php the_content(); ?>
             </div>

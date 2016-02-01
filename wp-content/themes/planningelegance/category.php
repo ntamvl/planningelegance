@@ -24,7 +24,7 @@ elseif (strtolower($current_category) == "news") {
 }
 
 ?>
-<div class="row blog-paginate">
+<div class="row blog-paginate hide">
 	<div class="col-md-12 text-center">
 		<?php if ( function_exists('wp_bootstrap_pagination') ) wp_bootstrap_pagination(); ?>
 	</div>

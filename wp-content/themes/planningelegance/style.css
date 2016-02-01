@@ -4421,3 +4421,13 @@ a#scroll-to-top {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+
+.news > .wht-fnt {
+	color: #000 !important;
+}
+
+#osd-search-submit {
+	width: 20px;
+	position: relative;
+  top: 4px;
+}
